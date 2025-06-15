@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane fx:id="homePane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ispw.fastridetrack.controller.GUIController.HomeGUIController">
+   <children>
+
+      <!-- Immagine di sfondo -->
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../images/Home.jpg" />
+         </image>
+      </ImageView>
+
+      <!-- WebView per la mappa -->
+      <WebView fx:id="mapWebView" layoutX="529.0" layoutY="137.0" prefHeight="473.0" prefWidth="722.0" />
+
+      <AnchorPane layoutX="925.0" layoutY="460.0" prefHeight="200.0" prefWidth="320.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+         <children>
+            <VBox alignment="TOP_LEFT" layoutX="20.0" layoutY="20.0" spacing="8.0">
+               <children>
+                  <Label style="-fx-text-fill: #a0a0a0; -fx-font-size: 12px; -fx-font-weight: bold;" text="PICKUP" />
+                  <Label style="-fx-text-fill: black; -fx-font-size: 14px;" text="My current location" />
+
+                  <ChoiceBox fx:id="rangeChoiceBox" prefWidth="160.0" style="-fx-background-color: #00b3b3; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+                  <Separator prefWidth="260.0" />
+
+                  <Label style="-fx-text-fill: #a0a0a0; -fx-font-size: 12px; -fx-font-weight: bold;" text="DROP-OFF" />
+                  <TextField fx:id="destinationField" prefWidth="260.0" promptText="Inserisci destinazione" />
+
+                  <Button fx:id="checkRiderButton" onAction="#onCheckRider" prefHeight="25.0" prefWidth="258.0" style="-fx-background-color: #ffd700; -fx-font-weight: bold; -fx-text-fill: black; -fx-background-radius: 20;" text="Check Driver" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+
+      <!-- Label di benvenuto -->
+      <Label fx:id="welcomeLabel" layoutX="83.0" layoutY="255.0" prefHeight="25.0" prefWidth="287.0" style="-fx-text-fill: black; -fx-font-size: 16px;" text="Benvenuto" />
+
+      <!-- Pulsanti -->
+      <Button fx:id="myAccountButton" layoutX="93.0" layoutY="153.0" onAction="#onMyAccount" prefWidth="93.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="myWalletButton" layoutX="145.0" layoutY="393.0" onAction="#onMyWallet" prefWidth="75.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="logoutButton" layoutX="140.0" layoutY="521.0" onAction="#onLogout" prefWidth="61.0" style="-fx-background-color: transparent;" />
+
+   </children>
+</AnchorPane>

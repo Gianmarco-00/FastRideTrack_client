@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ispw.fastridetrack.controller.GUIController.SelectTaxiGUIController">
+
+   <ImageView fitHeight="720.0" fitWidth="1280.0">
+      <Image url="@../images/SelectTaxi.jpg"/>
+   </ImageView>
+
+   <WebView fx:id="mapView" layoutX="568.0" layoutY="137.0" prefHeight="474.0" prefWidth="684.0" />
+
+   <TableView fx:id="taxiTable" layoutX="390.0" layoutY="196.0" prefHeight="287.0" prefWidth="863.0">
+      <columns>
+         <TableColumn fx:id="driverNameColumn" prefWidth="180.0" text="Driver" />
+         <TableColumn fx:id="carModelColumn" prefWidth="180.0" text="Car Model" />
+         <TableColumn fx:id="plateColumn" prefWidth="180.0" text="Plate" />
+         <TableColumn fx:id="etaColumn" prefWidth="180.0" text="ETA" />
+         <TableColumn fx:id="priceColumn" prefWidth="180.0" text="Price (€)" />
+      </columns>
+   </TableView>
+
+   <Label layoutX="397.0" layoutY="488.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Select Payment Method:" />
+   <ChoiceBox fx:id="paymentChoiceBox" layoutX="413.0" layoutY="524.0" prefWidth="130.0" />
+
+   <AnchorPane layoutX="925.0" layoutY="460.0" prefHeight="200.0" prefWidth="320.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+      <children>
+         <VBox alignment="TOP_LEFT" layoutX="20.0" layoutY="20.0" spacing="8.0">
+            <children>
+               <Label style="-fx-text-fill: #a0a0a0; -fx-font-size: 12px; -fx-font-weight: bold;" text="PICKUP" />
+               <Label style="-fx-text-fill: black; -fx-font-size: 14px;" text="My current location" />
+               <Separator prefWidth="260.0" />
+               <Label style="-fx-text-fill: #a0a0a0; -fx-font-size: 12px; -fx-font-weight: bold;" text="DROP-OFF" />
+               <TextField fx:id="destinationField" editable="false" prefWidth="260.0" promptText="Inserisci destinazione" />
+               <Button fx:id="confirmRideButton" onAction="#onConfirmRide" prefHeight="25.0" prefWidth="258.0" style="-fx-background-color: #ffd700; -fx-font-weight: bold; -fx-text-fill: black; -fx-background-radius: 20;" text="Confirm Ride" />
+            </children>
+         </VBox>
+      </children>
+   </AnchorPane>
+
+   <Button fx:id="goBackButton" layoutX="397.0" layoutY="158.0" mnemonicParsing="false" onAction="#onGoBackHome" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+</AnchorPane>

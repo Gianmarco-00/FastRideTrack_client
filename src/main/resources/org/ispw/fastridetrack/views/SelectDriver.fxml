@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ispw.fastridetrack.controller.GUIController.SelectDriverGUIController">
+
+   <!-- Immagine di sfondo -->
+   <ImageView fitHeight="720.0" fitWidth="1280.0">
+      <Image url="@../images/SelectDriver.jpg"/>
+   </ImageView>
+
+   <!-- WebView leggermente più piccola per mostrare l'immagine sotto -->
+   <WebView fx:id="mapView" layoutX="213.0" layoutY="130.0" prefHeight="570.0" prefWidth="1044.0" />
+
+   <!-- Card info driver -->
+   <VBox layoutX="950" layoutY="100" spacing="15" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 20;                 -fx-effect: dropshadow(gaussian, gray, 5, 0.3, 0, 1);">
+
+      <Label fx:id="driverNameLabel" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Driver Name" />
+
+      <Label fx:id="vehiclePlateLabel" style="-fx-text-fill: #999;" text="Vehicle Plate: ABC123" />
+
+      <GridPane hgap="10" vgap="10">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" />
+            <ColumnConstraints halignment="LEFT" />
+         </columnConstraints>
+
+         <Label text="🚗" GridPane.rowIndex="0" />
+         <Label fx:id="vehicleInfoLabel" prefHeight="17.0" prefWidth="156.0" text="Vehicle Model" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+         <Label text="⏱️" GridPane.rowIndex="1" />
+         <Label fx:id="estimatedTimeLabel"  GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+         <Label text="💰" GridPane.rowIndex="2" />
+         <Label fx:id="estimatedFareLabel" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         </Label>
+
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+
+      <Button fx:id="confirmButton" onAction="#onConfirmRide" prefWidth="200" style="-fx-background-color: #1abc9c; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Confirm Driver" />
+   </VBox>
+   <Button fx:id="goBackButton" layoutX="83.0" layoutY="155.0" mnemonicParsing="false"
+           prefHeight="25.0" prefWidth="115.0"
+           style="-fx-background-color: transparent;"
+           onAction="#onGoBack" />
+
+</AnchorPane>

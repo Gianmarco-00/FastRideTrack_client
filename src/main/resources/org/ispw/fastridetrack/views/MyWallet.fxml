@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="org.ispw.fastridetrack.controller.GUIController.MyWalletGUIController"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="720.0" prefWidth="1280.0">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../images/MyWallet.jpg" />
+         </image>
+      </ImageView>
+
+      <!-- Pulsante per tornare indietro -->
+      <Button fx:id="btnBack" layoutX="396.0" layoutY="158.0"
+              mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0"
+              style="-fx-background-color: transparent;"
+              onAction="#onBackPressed" />
+
+      <!-- Pulsante per confermare la scelta -->
+      <Button fx:id="btnConfirm" layoutX="432.0" layoutY="401.0"
+              mnemonicParsing="false" prefHeight="43.0" prefWidth="307.0"
+              style="-fx-background-color: transparent;"
+              onAction="#onConfirmPressed" />
+
+      <!-- CheckBox per pagamento in contanti -->
+      <CheckBox fx:id="checkBoxCard" layoutX="711.0" layoutY="268.0" mnemonicParsing="false" />
+
+      <!-- CheckBox per pagamento con carta -->
+      <CheckBox fx:id="checkBoxCash" layoutX="711.0" layoutY="307.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>
+
+
