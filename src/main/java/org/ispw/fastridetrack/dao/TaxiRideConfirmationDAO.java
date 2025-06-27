@@ -4,7 +4,7 @@ import org.ispw.fastridetrack.model.TaxiRideConfirmation;
 
 import java.util.Optional;
 
-public interface TaxiRideDAO {
+public interface TaxiRideConfirmationDAO {
     void save(TaxiRideConfirmation ride);
     Optional<TaxiRideConfirmation> findById(int rideID);
     void update(TaxiRideConfirmation ride);

@@ -2,7 +2,7 @@ package org.ispw.fastridetrack.dao.mysql;
 
 import org.ispw.fastridetrack.dao.ClientDAO;
 import org.ispw.fastridetrack.dao.DriverDAO;
-import org.ispw.fastridetrack.dao.TaxiRideDAO;
+import org.ispw.fastridetrack.dao.TaxiRideConfirmationDAO;
 import org.ispw.fastridetrack.exception.DriverDAOException;
 import org.ispw.fastridetrack.exception.TaxiRidePersistenceException;
 import org.ispw.fastridetrack.model.*;
@@ -11,11 +11,11 @@ import org.ispw.fastridetrack.model.Driver;
 import java.sql.*;
 import java.util.Optional;
 
-public class TaxiRideDAOMYSQL implements TaxiRideDAO {
+public class TaxiRideConfirmationDAOMYSQL implements TaxiRideConfirmationDAO {
 
     private final Connection connection;
 
-    public TaxiRideDAOMYSQL(Connection connection) {
+    public TaxiRideConfirmationDAOMYSQL(Connection connection) {
         this.connection = connection;
     }
 

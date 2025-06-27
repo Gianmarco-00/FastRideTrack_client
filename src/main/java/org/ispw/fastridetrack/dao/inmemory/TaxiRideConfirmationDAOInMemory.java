@@ -1,6 +1,6 @@
 package org.ispw.fastridetrack.dao.inmemory;
 
-import org.ispw.fastridetrack.dao.TaxiRideDAO;
+import org.ispw.fastridetrack.dao.TaxiRideConfirmationDAO;
 import org.ispw.fastridetrack.exception.RideNotFoundException;
 import org.ispw.fastridetrack.model.TaxiRideConfirmation;
 
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class TaxiRideDAOInMemory implements TaxiRideDAO {
+public class TaxiRideConfirmationDAOInMemory implements TaxiRideConfirmationDAO {
     private final Map<Integer, TaxiRideConfirmation> rides = new HashMap<>();
 
     @Override

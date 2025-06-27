@@ -3,7 +3,7 @@ package org.ispw.fastridetrack.controller.applicationcontroller;
 import jakarta.mail.MessagingException;
 import org.ispw.fastridetrack.bean.EmailBean;
 import org.ispw.fastridetrack.bean.TaxiRideConfirmationBean;
-import org.ispw.fastridetrack.dao.TaxiRideDAO;
+import org.ispw.fastridetrack.dao.TaxiRideConfirmationDAO;
 import org.ispw.fastridetrack.model.TaxiRideConfirmation;
 import org.ispw.fastridetrack.session.SessionManager;
 import org.ispw.fastridetrack.adapter.EmailService;
@@ -11,12 +11,12 @@ import org.ispw.fastridetrack.adapter.GmailAdapter;
 
 public class ClientRideManagementApplicationController {
 
-    private final TaxiRideDAO taxiRideDAO;
+    private final TaxiRideConfirmationDAO taxiRideConfirmationDAO;
     private final EmailService emailService;
 
     public ClientRideManagementApplicationController() {
         SessionManager session = SessionManager.getInstance();
-        this.taxiRideDAO = session.getTaxiRideDAO();
+        this.taxiRideConfirmationDAO = session.getTaxiRideDAO();
         this.emailService = new GmailAdapter();
     }
 
@@ -28,10 +28,10 @@ public class ClientRideManagementApplicationController {
         TaxiRideConfirmation model = bean.toModel();
 
         // Salvataggio della corsa
-        if (!taxiRideDAO.exists(model.getRideID())) {
-            taxiRideDAO.save(model);
+        if (!taxiRideConfirmationDAO.exists(model.getRideID())) {
+            taxiRideConfirmationDAO.save(model);
         } else {
-            taxiRideDAO.update(model);
+            taxiRideConfirmationDAO.update(model);
         }
 
         // Invio notifica al driver

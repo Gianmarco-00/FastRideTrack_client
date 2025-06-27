@@ -1,6 +1,6 @@
 package org.ispw.fastridetrack.dao.filesystem;
 
-import org.ispw.fastridetrack.dao.TaxiRideDAO;
+import org.ispw.fastridetrack.dao.TaxiRideConfirmationDAO;
 import org.ispw.fastridetrack.exception.TaxiRidePersistenceException;
 import org.ispw.fastridetrack.model.Client;
 import org.ispw.fastridetrack.model.Driver;
@@ -16,14 +16,14 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-public class TaxiRideDAOFileSystem implements TaxiRideDAO {
+public class TaxiRideConfirmationDAOFileSystem implements TaxiRideConfirmationDAO {
 
     private static final String FILE_PATH = "src/data/taxi_rides.csv";
 
     private final ClientDAOFileSystem clientDAOFileSystem;
     private final DriverDAOFileSystem driverDAOFileSystem;
 
-    public TaxiRideDAOFileSystem(ClientDAOFileSystem clientDAOFileSystem, DriverDAOFileSystem driverDAOFileSystem) {
+    public TaxiRideConfirmationDAOFileSystem(ClientDAOFileSystem clientDAOFileSystem, DriverDAOFileSystem driverDAOFileSystem) {
         this.clientDAOFileSystem = clientDAOFileSystem;
         this.driverDAOFileSystem = driverDAOFileSystem;
         ensureFileExists();
