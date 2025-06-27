@@ -1,6 +1,6 @@
 package org.ispw.fastridetrack.bean;
 
-import org.ispw.fastridetrack.model.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 import org.ispw.fastridetrack.model.RideRequest;
 
 public class RideRequestBean {

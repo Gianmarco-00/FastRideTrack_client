@@ -1,5 +1,8 @@
 package org.ispw.fastridetrack.model;
 
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.UserType;
+
 public class Client extends User {
     private PaymentMethod paymentMethod;
 

@@ -7,6 +7,8 @@ import org.ispw.fastridetrack.exception.DriverDAOException;
 import org.ispw.fastridetrack.exception.TaxiRidePersistenceException;
 import org.ispw.fastridetrack.model.*;
 import org.ispw.fastridetrack.model.Driver;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.RideConfirmationStatus;
 
 import java.sql.*;
 import java.util.Optional;

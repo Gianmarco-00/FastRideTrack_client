@@ -5,7 +5,7 @@ import org.ispw.fastridetrack.exception.DriverDAOException;
 import org.ispw.fastridetrack.model.Client;
 import org.ispw.fastridetrack.model.Driver;
 import org.ispw.fastridetrack.session.SessionManager;
-import org.ispw.fastridetrack.model.UserType;
+import org.ispw.fastridetrack.model.enumeration.UserType;
 import org.ispw.fastridetrack.dao.ClientDAO;
 import org.ispw.fastridetrack.dao.DriverDAO;
 

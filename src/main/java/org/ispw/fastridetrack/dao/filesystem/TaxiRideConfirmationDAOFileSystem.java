@@ -4,8 +4,8 @@ import org.ispw.fastridetrack.dao.TaxiRideConfirmationDAO;
 import org.ispw.fastridetrack.exception.TaxiRidePersistenceException;
 import org.ispw.fastridetrack.model.Client;
 import org.ispw.fastridetrack.model.Driver;
-import org.ispw.fastridetrack.model.RideConfirmationStatus;
-import org.ispw.fastridetrack.model.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.RideConfirmationStatus;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 import org.ispw.fastridetrack.model.TaxiRideConfirmation;
 
 import java.io.*;

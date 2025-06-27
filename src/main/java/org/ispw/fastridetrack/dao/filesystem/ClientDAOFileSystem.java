@@ -2,7 +2,7 @@ package org.ispw.fastridetrack.dao.filesystem;
 
 import org.ispw.fastridetrack.dao.ClientDAO;
 import org.ispw.fastridetrack.model.Client;
-import org.ispw.fastridetrack.model.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

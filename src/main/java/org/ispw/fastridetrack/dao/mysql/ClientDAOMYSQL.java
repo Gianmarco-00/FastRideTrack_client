@@ -3,7 +3,7 @@ package org.ispw.fastridetrack.dao.mysql;
 import org.ispw.fastridetrack.dao.ClientDAO;
 import org.ispw.fastridetrack.exception.ClientDAOException;
 import org.ispw.fastridetrack.model.Client;
-import org.ispw.fastridetrack.model.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

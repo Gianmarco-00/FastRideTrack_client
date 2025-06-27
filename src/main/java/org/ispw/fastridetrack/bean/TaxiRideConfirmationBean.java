@@ -1,7 +1,7 @@
 package org.ispw.fastridetrack.bean;
 
-import org.ispw.fastridetrack.model.PaymentMethod;
-import org.ispw.fastridetrack.model.RideConfirmationStatus;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.RideConfirmationStatus;
 import org.ispw.fastridetrack.model.TaxiRideConfirmation;
 
 import java.time.LocalDateTime;

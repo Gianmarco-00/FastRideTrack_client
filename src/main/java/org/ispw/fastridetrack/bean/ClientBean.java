@@ -2,8 +2,8 @@ package org.ispw.fastridetrack.bean;
 
 import org.ispw.fastridetrack.model.Client;
 import org.ispw.fastridetrack.model.Coordinate;
-import org.ispw.fastridetrack.model.PaymentMethod;
-import org.ispw.fastridetrack.model.UserType;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.UserType;
 
 public class ClientBean extends UserBean {
     private final PaymentMethod paymentMethod;

@@ -5,7 +5,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.ispw.fastridetrack.exception.FXMLLoadException;
-import org.ispw.fastridetrack.model.UserType;
+import org.ispw.fastridetrack.model.enumeration.UserType;
 
 import static org.ispw.fastridetrack.util.ViewPath.HOMEPAGE_FXML;
 import static org.ispw.fastridetrack.util.ViewPath.HOMECLIENT_FXML;

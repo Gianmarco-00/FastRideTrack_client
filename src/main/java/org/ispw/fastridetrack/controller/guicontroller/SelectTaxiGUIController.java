@@ -11,7 +11,7 @@ import javafx.scene.web.WebView;
 import org.ispw.fastridetrack.bean.*;
 import org.ispw.fastridetrack.exception.FXMLLoadException;
 import org.ispw.fastridetrack.model.Map;
-import org.ispw.fastridetrack.model.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 import org.ispw.fastridetrack.session.SessionManager;
 import org.ispw.fastridetrack.model.TemporaryMemory;
 

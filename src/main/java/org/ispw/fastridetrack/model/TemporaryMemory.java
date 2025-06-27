@@ -1,6 +1,7 @@
 package org.ispw.fastridetrack.model;
 
 import org.ispw.fastridetrack.bean.*;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 import org.ispw.fastridetrack.observer.Subject;
 
 import java.beans.PropertyChangeSupport;

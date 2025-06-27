@@ -3,9 +3,9 @@ package org.ispw.fastridetrack.controller.clicontroller;
 import org.ispw.fastridetrack.bean.*;
 import org.ispw.fastridetrack.controller.guicontroller.ApplicationFacade;
 import org.ispw.fastridetrack.exception.*;
-import org.ispw.fastridetrack.model.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 import org.ispw.fastridetrack.model.TemporaryMemory;
-import org.ispw.fastridetrack.model.UserType;
+import org.ispw.fastridetrack.model.enumeration.UserType;
 import org.ispw.fastridetrack.session.SessionManager;
 
 import java.util.List;

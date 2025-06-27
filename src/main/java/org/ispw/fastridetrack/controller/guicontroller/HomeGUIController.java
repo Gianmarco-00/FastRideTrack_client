@@ -12,7 +12,7 @@ import org.ispw.fastridetrack.bean.RideRequestBean;
 import org.ispw.fastridetrack.bean.CoordinateBean;
 import org.ispw.fastridetrack.exception.FXMLLoadException;
 import org.ispw.fastridetrack.model.Client;
-import org.ispw.fastridetrack.model.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
 import org.ispw.fastridetrack.model.TemporaryMemory;
 import org.ispw.fastridetrack.session.SessionManager;
 import org.ispw.fastridetrack.util.*;

@@ -1,5 +1,7 @@
 package org.ispw.fastridetrack.model;
 
+import org.ispw.fastridetrack.model.enumeration.UserType;
+
 public class Driver extends User {
 
     private String vehicleInfo;

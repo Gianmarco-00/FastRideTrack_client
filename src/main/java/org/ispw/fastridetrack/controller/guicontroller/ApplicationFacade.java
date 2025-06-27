@@ -9,6 +9,9 @@ import org.ispw.fastridetrack.controller.applicationcontroller.MapApplicationCon
 import org.ispw.fastridetrack.adapter.GoogleMapsAdapter;
 import org.ispw.fastridetrack.exception.*;
 import org.ispw.fastridetrack.model.*;
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.RideConfirmationStatus;
+import org.ispw.fastridetrack.model.enumeration.UserType;
 import org.ispw.fastridetrack.session.SessionManager;
 
 import java.time.LocalDateTime;

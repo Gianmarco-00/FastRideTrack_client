@@ -1,6 +1,6 @@
 package org.ispw.fastridetrack.bean;
 
-import org.ispw.fastridetrack.model.UserType;
+import org.ispw.fastridetrack.model.enumeration.UserType;
 
 public class UserBean {
 

@@ -1,4 +1,4 @@
-package org.ispw.fastridetrack.model;
+package org.ispw.fastridetrack.model.enumeration;
 
 public enum RideConfirmationStatus {
     PENDING,

@@ -1,5 +1,8 @@
 package org.ispw.fastridetrack.model;
 
+import org.ispw.fastridetrack.model.enumeration.PaymentMethod;
+import org.ispw.fastridetrack.model.enumeration.RideConfirmationStatus;
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
