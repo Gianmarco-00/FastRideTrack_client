@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 import org.ispw.fastridetrack.controller.guicontroller.ApplicationFacade;
 import org.ispw.fastridetrack.session.SessionManager;
 import org.ispw.fastridetrack.controller.guicontroller.SceneNavigator;
-import org.ispw.fastridetrack.controller.clicontroller.clientclicontroller;
+import org.ispw.fastridetrack.controller.clicontroller.ClientCliController;
 
 import static org.ispw.fastridetrack.util.ViewPath.HOMEPAGE_FXML;
 
@@ -33,7 +33,7 @@ public class Main extends Application {
         if (useCLI) {
             System.out.println("Avvio in modalità CLI...");
             try {
-                clientclicontroller cliView = new clientclicontroller();
+                ClientCliController cliView = new ClientCliController();
                 cliView.start();
             } catch (Exception e) {
                 System.err.println("Errore durante l'esecuzione della CLI: " + e.getMessage());

@@ -11,7 +11,7 @@ import org.ispw.fastridetrack.session.SessionManager;
 import java.util.List;
 import java.util.Scanner;
 
-public class clientclicontroller {
+public class ClientCliController {
 
     private final Scanner scanner = new Scanner(System.in);
 
@@ -19,7 +19,7 @@ public class clientclicontroller {
     private final ApplicationFacade facade;
 
 
-    public clientclicontroller() throws Exception {
+    public ClientCliController() throws Exception {
         facade = new ApplicationFacade();
     }
 
